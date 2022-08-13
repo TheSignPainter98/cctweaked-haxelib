@@ -15,7 +15,7 @@ extern class ColorData {
 	var b:Float;
 }
 
-extern class Monitor {
+extern class Monitor implements TerminalObject {
 	public function setTextScale(scale:Float):Void; // Set the scale of this monitor.
 	public function getTextScale():Float; // Get the monitor's current text scale.
 	public function write(text:String):Void; // Write text at the current cursor position, moving the cursor to the end of the text.
