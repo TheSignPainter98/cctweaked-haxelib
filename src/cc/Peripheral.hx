@@ -15,7 +15,8 @@ extern class Peripheral {
 
 	@:native("find")
 	private static function _find<T>(type:String, ?filter:(String, T) -> Bool):Dynamic;
-	public static function find<T>(type:String, ?filter:(String, T) -> Bool):Table<Int, T> {
+
+	public static inline function find<T>(type:String, ?filter:(String, T) -> Bool):Table<Int, T> {
 		return TableTools.pack(_find(type, filter));
 	}
 
