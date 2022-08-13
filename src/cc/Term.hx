@@ -15,7 +15,7 @@ extern class TerminalSize {
 }
 
 @:luaDotMethod
-interface TerminalObject {
+extern class TerminalObject {
 	public function write(text:String):Void;
 	public function blit(text:String, colors:String, background:String):Void;
 	public function clear():Void;
