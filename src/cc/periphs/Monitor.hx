@@ -1,5 +1,7 @@
 package cc.periphs;
 
+import cc.Term.TerminalObject;
+
 @:multiReturn
 extern class Position {
 	var x:Int;
