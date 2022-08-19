@@ -15,7 +15,7 @@ extern class OS {
 	public static function unloadAPI(path:String):Void;
 	public static function queueEvent(type:String, data:Rest<Dynamic>):Void;
 	public static function clock():Float;
-	public static function startTimer(timeout:Int):Int;
+	public static function startTimer(timeout:Float):Int;
 	public static function cancelTimer(id:Int):Void;
 	public static function time():Float;
 	public static function sleep(timeout:Float):Void;
